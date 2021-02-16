@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Document</title>
+</head>
+<body>
+    <p><strong>ON</strong> - switches on the property (in this case making the background red)</p>
+<p><strong>OFF</strong> - switches off the property</p>
+<p><strong>INHERIT</strong> - goes up the parent structure until it finds an 'ON' or an 'OFF' and then imitates that</p>
+    
+    <div class="box off">GREAT-GRANDPARENT
+    <p>HAS BEEN SET TO OFF</p></div>
+    
+      <div class="box inherit">GRANDPARENT
+    <div><span class="on">ON</span> | <span class="off">OFF</span> | <span class="inherit white">INHERIT</span>
+    </div></div>
+    
+      <div class="box inherit">PARENT
+    <div><span class="on">ON</span> | <span class="off">OFF</span> | <span class="inherit white">INHERIT</span>
+    </div></div>
+    
+    
+      <div class="box inherit">CHILD
+    <div><span class="on">ON</span> | <span class="off">OFF</span> | <span class="inherit white">INHERIT</span>
+    </div></div>
+    
+      <div class="box inherit">GRANDCHILD
+    <div><span class="on">ON</span> | <span class="off">OFF</span> | <span class="inherit white">INHERIT</span>
+    </div></div>
+    
+      <div class="box inherit">GREAT-GRANDCHILD
+    <div><span class="on">ON</span> | <span class="off">OFF</span> | <span class="inherit white">INHERIT</span>
+    </div></div>
+
+    
+</body>
+</html>
